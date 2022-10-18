@@ -1,0 +1,60 @@
+$duration: 0.2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$mukta: 'Ek Mukta', sans-serif;
+
+$menuItems: 7;
+.navContents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    .linkGroups {
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+        a,
+        a:hover {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 3px;
+            margin-right: 10px;
+            .socialIcons {
+                font-size: 1.3rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+
+        li:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0px;
+            background: transparent;
+            transition: width 0.5s ease, background-color 0.5s ease;
+        }
+        li:hover:after {
+            width: 100%;
+            background: black;
+        }
+
+        .activeLink {
+            font-weight: 700;
+        }
+    }
+}
