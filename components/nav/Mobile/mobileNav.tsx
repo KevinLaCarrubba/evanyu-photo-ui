@@ -38,7 +38,10 @@ const MobileNav = () => {
                     style={{ display: `${show === true ? 'block' : 'none'}` }}>
                     {MobileNavItems.map((item, index) => {
                         return (
-                            <li key={index} className={styles.menuItem}>
+                            <li
+                                key={index}
+                                className={styles.menuItem}
+                                onClick={menuToggle}>
                                 <Link href={item.url}>
                                     <a>{item.label}</a>
                                 </Link>
