@@ -1,5 +1,7 @@
+import AboutPage from '../components/views/About'
+
 const About = () => {
-    return <div>About Page</div>
+    return <AboutPage />
 }
 
 export default About

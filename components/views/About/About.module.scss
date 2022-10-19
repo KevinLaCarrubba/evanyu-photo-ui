@@ -1,0 +1,28 @@
+.aboutPageContents {
+    margin: 0 10rem;
+    place-items: center;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: auto auto;
+    .imageContainer {
+        padding-right: 2rem;
+    }
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        ul {
+            padding-left: 0.7rem;
+            li {
+                font-weight: 300;
+            }
+        }
+        h4 {
+            width: 100%;
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid gray;
+        }
+        span {
+            font-weight: 500;
+        }
+    }
+}
