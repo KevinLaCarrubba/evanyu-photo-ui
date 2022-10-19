@@ -17,7 +17,7 @@ const AboutPage = () => {
                 <Image src={Headshot} width={500} height={500} />
             </div>
             <div className={styles.infoContainer}>
-                <h4>About Me</h4>
+                <h4>About</h4>
                 <p>
                     Evan Yu is a New York/New Jersey based photographer with a
                     wealth of experience and knowledge across a variety of
