@@ -7,8 +7,7 @@ import { MobileNavItems } from '../routes'
 const MobileNav = () => {
     const [show, setShow] = useState(false)
     const menuToggle = () => {
-        setShow(!show)
-        return console.log('yerrrr')
+        return setShow(!show)
     }
 
     return (

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import Link from 'next/link'
 import styles from './ContactForm.module.scss'
 import { BsInstagram, BsLinkedin } from 'react-icons/bs'
 
@@ -86,8 +87,16 @@ const ContactForm = () => {
                 <button className={styles.button}>Send</button>
             </form>
             <div className={styles.socialLinks}>
-                <BsInstagram className={styles.socialIcon} />
-                <BsLinkedin className={styles.socialIcon} />
+                <Link href="https://www.instagram.com">
+                    <a>
+                        <BsInstagram className={styles.socialIcon} />
+                    </a>
+                </Link>
+                <Link href="https://www.linkedin.com">
+                    <a>
+                        <BsLinkedin className={styles.socialIcon} />
+                    </a>
+                </Link>
             </div>
 
             <h1 style={{ display: 'none' }}>
