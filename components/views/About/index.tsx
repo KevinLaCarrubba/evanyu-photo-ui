@@ -42,7 +42,7 @@ const AboutPage = () => {
                 <span>Sports Teams</span>
                 <ul>
                     <li>-New York Knicks</li>
-                    <li>-New York Knicks</li>
+                    <li>-New York Rangers</li>
                 </ul>
             </div>
         </div>
