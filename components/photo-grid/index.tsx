@@ -2,7 +2,7 @@ import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import { motion, Variants } from 'framer-motion'
 import styles from './PhotoGrid.module.scss'
-const PhotoGrid = urlArray => {
+const PhotoGrid = (urlArray: any) => {
     const cardVariants: Variants = {
         offscreen: {
             filter: 'blur(2px)',
@@ -16,11 +16,11 @@ const PhotoGrid = urlArray => {
             }
         }
     }
-    console.log(urlArray.urlArray)
+
     return (
         <div className={styles.pageContent}>
             <ImageList variant="masonry" cols={3} gap={10}>
-                {urlArray.urlArray.map((item: string, index: number) => (
+                {urlArray?.urlArray.map((item: string, index: number) => (
                     <motion.div
                         key={index}
                         className="card-container"
