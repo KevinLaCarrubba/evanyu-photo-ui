@@ -1,6 +1,6 @@
 export const NavItems = [
     {
-        label: 'Work',
+        label: 'Home',
         url: '/'
     },
     {
@@ -15,7 +15,7 @@ export const NavItems = [
 
 export const MobileNavItems = [
     {
-        label: 'Work',
+        label: 'Home',
         url: '/'
     },
     {

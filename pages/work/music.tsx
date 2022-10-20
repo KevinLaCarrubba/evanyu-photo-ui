@@ -1,4 +1,5 @@
+import MusicPage from '../../components/views/Work/music'
 const Music = () => {
-    return <div>Yerr its the music Page</div>
+    return <MusicPage />
 }
 export default Music
