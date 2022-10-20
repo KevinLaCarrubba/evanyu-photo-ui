@@ -36,7 +36,7 @@ const AboutPage = () => {
                 </ul>
                 <span>Entertainment Organizations</span>
                 <ul>
-                    <li>-Just Women's Sports</li>
+                    <li>-Just Women&apos;s Sports</li>
                     <li>-Madison Square Garden Entertainment</li>
                 </ul>
                 <span>Sports Teams</span>

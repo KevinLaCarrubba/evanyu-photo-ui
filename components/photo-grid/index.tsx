@@ -22,6 +22,7 @@ const PhotoGrid = urlArray => {
             <ImageList variant="masonry" cols={3} gap={10}>
                 {urlArray.urlArray.map((item: string, index: number) => (
                     <motion.div
+                        key={index}
                         className="card-container"
                         initial="offscreen"
                         whileInView="onscreen"
