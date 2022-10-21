@@ -58,10 +58,10 @@ const MobileNav = () => {
                             </li>
                         )
                     })}
+                    <li className={styles.socialLinks}>
+                        <BsInstagram /> <BsLinkedin />{' '}
+                    </li>
                 </ul>
-                <div className={styles.socialLinks}>
-                    <BsInstagram /> <BsLinkedin />{' '}
-                </div>
             </div>
         </nav>
     )
