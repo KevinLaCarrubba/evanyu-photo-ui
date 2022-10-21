@@ -17,7 +17,7 @@ const AboutPage = () => {
                 <Image src={Headshot} width={500} height={500} />
             </div>
             <div className={styles.infoContainer}>
-                <h4>About</h4>
+                <h2>About</h2>
                 <p>
                     Evan Yu is a New York/New Jersey based photographer with a
                     wealth of experience and knowledge across a variety of
@@ -27,7 +27,7 @@ const AboutPage = () => {
                     for sports, music, pop culture, and travel. He is a long
                     suffering fan of the Mets, Knicks, Eagles, and Liverpool FC.
                 </p>
-                <h4>Work</h4>
+                <h2>Work</h2>
                 <span>Sports Organizations</span>
                 <div>
                     <NBAIcon />
