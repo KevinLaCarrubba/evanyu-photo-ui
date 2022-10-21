@@ -29,21 +29,24 @@ const AboutPage = () => {
                 </p>
                 <h4>Work</h4>
                 <span>Sports Organizations</span>
-                <ul>
-                    <li>-NBA</li>
-                    <li>-MLB</li>
-                    <li>-XFL</li>
-                </ul>
+                <div>
+                    <NBAIcon />
+
+                    <MLBIcon />
+
+                    <XFLIcon />
+                </div>
                 <span>Entertainment Organizations</span>
-                <ul>
-                    <li>-Just Women&apos;s Sports</li>
-                    <li>-Madison Square Garden Entertainment</li>
-                </ul>
+                <div>
+                    <JWSIcon />
+
+                    <MSGEIcon />
+                </div>
                 <span>Sports Teams</span>
-                <ul>
-                    <li>-New York Knicks</li>
-                    <li>-New York Rangers</li>
-                </ul>
+                <div>
+                    <NYKIcon />
+                    <NYRIcon />
+                </div>
             </div>
         </div>
     )

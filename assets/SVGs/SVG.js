@@ -2,7 +2,7 @@ export const NBAIcon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         height={50}
-        width={20}
+        width={30}
         viewBox="0 0 276.991 569.026">
         <path fill="#fff" d="M0 0h276.991v569.026H0z" />
         <path
@@ -24,8 +24,8 @@ export const MLBIcon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="30 -30 100 100"
-        height={40}
-        width={60}>
+        height={60}
+        width={100}>
         <path
             fill="#fff"
             d="M117.44 0H10.68a10.76 10.76 0 0 0-7.57 3.08A10.64 10.64 0 0 0 0 10.7v47.64a10.56 10.56 0 0 0 3.1 7.59 10.69 10.69 0 0 0 7.58 3.13h106.76a10.71 10.71 0 0 0 10.66-10.72V10.69A10.61 10.61 0 0 0 117.44 0z"
@@ -52,9 +52,9 @@ export const MLBIcon = () => (
 export const XFLIcon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        height={30}
-        width={60}
-        viewBox="0 0 290.47 75.51">
+        height={50}
+        width={80}
+        viewBox="0 0 290.47 10">
         <title>XFL logo</title>
         <path
             d="M367.12,474.65c.42-.48,1.1-.27,1.65-.33,5.49,0,11,0,16.49,0,.63.07,1.43-.14,1.91.41,2.84,2.76,5.61,5.6,8.35,8.46a18.51,18.51,0,0,1,2.56,2.78c-4-3.62-7.59-7.64-11.49-11.36C380.1,474.63,373.61,474.56,367.12,474.65Z"
@@ -171,8 +171,11 @@ export const XFLIcon = () => (
 )
 
 export const JWSIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1629.47 1051.14">
-        <defs></defs>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1629.47 1051.14"
+        height={40}
+        width={90}>
         <g id="Layer_2" data-name="Layer 2">
             <g id="Layer_1-2" data-name="Layer 1">
                 <path d="M866.1,679.34H780.29c4.94-60.58,9.86-120.75,14.77-180.92l-1.27-.14q-27.42,90.54-54.87,181.21h-68c-2-60.06-4-119.81-5.95-179.72-10.3,59.69-20.59,119.32-31,179.5H545.6l72.87-307.6H721.21C723.11,421.56,725,471,727,522.49,734.6,496,741.51,471.14,749,446.44s15.67-49.5,23.66-74.63H874.46C871.66,474.56,868.89,576.65,866.1,679.34Z" />
@@ -218,8 +221,9 @@ export const MSGEIcon = () => (
         id="Layer_1"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 521.46 91.8">
-        <defs></defs>
+        viewBox="0 -20 621.46 100"
+        height={50}
+        width={200}>
         <path
             className="cls-1"
             d="M99.27,212.37v91.8h91.79v-91.8ZM104.89,250l33.67-15.23s11.61-5.37,21.05-6.9l-54.72,33.32Zm0,15.66,56.33-38a56.42,56.42,0,0,1,7.35-.23l-63.68,57.35Zm0,31.83v-6l64.86-63.91a54.53,54.53,0,0,1,8.22,1.05l-30.79,68.89Zm79.2,0H155.22L179,228.77c1.71.38,3.41.85,5.12,1.41Z"
@@ -392,10 +396,9 @@ export const NYKIcon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        x="0px"
-        y="0px"
-        viewBox="0 0 308.36 249.88"
-        style={{ enableBackground: 'new 0 0 308.36 249.88' }}>
+        height={70}
+        width={70}
+        viewBox="0 -30 308.36 249.88">
         <g id="Template"></g>
         <g id="Type"></g>
         <g id="Logos">
@@ -535,8 +538,9 @@ export const NYRIcon = () => (
     <svg
         id="Layer_2"
         xmlns="http://www.w3.org/2000/svg"
+        height={55}
+        width={55}
         viewBox="0 0 102.72 98.36">
-        <defs></defs>
         <g id="Layer_1-2">
             <path
                 fill="#084f95"
