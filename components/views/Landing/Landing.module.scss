@@ -50,7 +50,22 @@
     .pageContent {
         display: grid;
         grid-template-columns: 1fr;
-        grid-row: auto auto auto auto;
+
+        row-gap: 1rem;
+        grid-template-rows: repeat(4, auto);
+
+        .container {
+            border-radius: 40px;
+            span {
+                border-radius: 40px;
+                img {
+                    object-position: 47.4928% 22.9881%;
+                }
+            }
+            .overlay {
+                border-radius: 40px;
+            }
+        }
     }
 }
 
