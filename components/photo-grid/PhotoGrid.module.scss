@@ -6,3 +6,24 @@
     gap: 1rem;
     justify-content: center;
 }
+
+@media only screen and (max-width: 1000px) {
+    .pageContent {
+        padding: 1rem 2rem;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .pageContent {
+        padding: 1rem 2rem;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        justify-content: center;
+    }
+}
