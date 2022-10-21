@@ -14,7 +14,13 @@ const AboutPage = () => {
     return (
         <div className={styles.aboutPageContents}>
             <div className={styles.imageContainer}>
-                <Image src={Headshot} width={500} height={500} />
+                <Image
+                    src={Headshot}
+                    width={500}
+                    height={500}
+                    loading="lazy"
+                    placeholder="blur"
+                />
             </div>
             <div className={styles.infoContainer}>
                 <h2>About</h2>

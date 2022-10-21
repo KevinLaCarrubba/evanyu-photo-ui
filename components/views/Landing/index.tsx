@@ -10,7 +10,13 @@ const LandingPage = () => {
                 return (
                     <Link href={item.route} key={index}>
                         <div className={styles.container}>
-                            <Image src={item.url} layout="fill" />
+                            <Image
+                                src={item.url}
+                                blurDataURL={item.url}
+                                layout="fill"
+                                loading="lazy"
+                                placeholder="blur"
+                            />
                             <div className={styles.overlay}>
                                 <span className={styles.label}>
                                     {item.label}
