@@ -1,14 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './MobileNav.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../../assets/Evan+Yu+Photography+-+Black+(Free+Crop).png'
+import { BsInstagram, BsLinkedin } from 'react-icons/bs'
 import { MobileNavItems } from '../routes'
 const MobileNav = () => {
     const [show, setShow] = useState(false)
+    const [stopScroll, setStopScroll] = useState(false)
     const menuToggle = () => {
-        return setShow(!show)
+        setShow(!show)
+        setStopScroll(!stopScroll)
     }
+
+    useEffect(() => {
+        if (stopScroll === true) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto'
+        }
+    }, [stopScroll])
 
     return (
         <nav>
@@ -48,8 +59,9 @@ const MobileNav = () => {
                         )
                     })}
                 </ul>
-                <div
-                    className={`${styles.shop} ${styles.icon} ${styles.iconBag}`}></div>
+                <div className={styles.socialLinks}>
+                    <BsInstagram /> <BsLinkedin />{' '}
+                </div>
             </div>
         </nav>
     )
