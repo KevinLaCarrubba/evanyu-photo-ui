@@ -33,26 +33,26 @@ const PhotoGrid = (urlArray: any) => {
             <div className={styles.pageContent}>
                 <ImageList variant="masonry" cols={3} gap={10}>
                     {urlArray?.urlArray.map((item: string, index: number) => (
-                        // <motion.div
-                        //     key={index}
-                        //     className="card-container"
-                        //     initial="offscreen"
-                        //     whileInView="onscreen"
-                        //     viewport={{ once: true, amount: 0.8 }}>
-                        //     <motion.div className="box" variants={cardVariants}>
-                        <ImageListItem key={index}>
-                            <Image
-                                src={`${item}?w=161&fit=crop&auto=format`}
-                                // srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}
-                                width="100%"
-                                height="100%"
-                                layout="responsive"
-                                loading="lazy"
-                                objectFit="contain"
-                            />
-                        </ImageListItem>
-                        //     </motion.div>
-                        // </motion.div>
+                        <motion.div
+                            key={index}
+                            className="card-container"
+                            initial="offscreen"
+                            whileInView="onscreen"
+                            viewport={{ once: true, amount: 0.8 }}>
+                            <motion.div className="box" variants={cardVariants}>
+                                <ImageListItem key={index}>
+                                    <Image
+                                        src={`${item}?w=161&fit=crop&auto=format`}
+                                        // srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                                        width="100%"
+                                        height="100%"
+                                        layout="responsive"
+                                        loading="lazy"
+                                        objectFit="contain"
+                                    />
+                                </ImageListItem>
+                            </motion.div>
+                        </motion.div>
                     ))}
                 </ImageList>
             </div>
