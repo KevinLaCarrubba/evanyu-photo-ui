@@ -174,4 +174,9 @@ export const eventURL = [
     'https://images.squarespace-cdn.com/content/v1/621859f803dd236b9e08d20e/7268a647-fc4f-4de3-ab26-2592977175d7/20211029_Northwell+Health+Happy+Hour_0051.jpg'
 ]
 
-export const landingURL = [sportsURL[0], musicURL[0], travelURL[0], eventURL[0]]
+export const landingURL = [
+    { url: sportsURL[2], label: 'Sports', route: '/work/sports' },
+    { url: musicURL[17], label: 'Music', route: '/work/music' },
+    { url: travelURL[0], label: 'Travel', route: '/work/travel' },
+    { url: eventURL[0], label: 'Events', route: '/work/events' }
+]

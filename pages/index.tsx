@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
-import WorkPage from '../components/views/Work'
+import LandingPage from '../components/views/Landing'
 
 const Home: NextPage = () => {
-    return <WorkPage />
+    return <LandingPage />
 }
 
 export default Home
