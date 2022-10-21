@@ -8,7 +8,7 @@ const LandingPage = () => {
         <div className={styles.pageContent}>
             {landingURL.map((item, index) => {
                 return (
-                    <Link href={item.route}>
+                    <Link href={item.route} key={index}>
                         <div className={styles.container}>
                             <Image src={item.url} layout="fill" />
                             <div className={styles.overlay}>
