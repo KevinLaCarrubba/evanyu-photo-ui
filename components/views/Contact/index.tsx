@@ -3,8 +3,7 @@ import ContactForm from '../../forms/contact'
 const ContactPage = () => {
     return (
         <div className={styles.contactPageContents}>
-            <h1>Contact</h1>
-            <h4> Let&apos;s work!</h4>
+            <h1> Let&apos;s work!</h1>
             <h4>Drop a message and I&apos;ll respond as soon as possible.</h4>
             <br />
             <ContactForm />

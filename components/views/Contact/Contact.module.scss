@@ -1,8 +1,10 @@
 .contactPageContents {
     display: flex;
+    padding: 1rem;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    row-gap: 1rem;
     h4 {
         font-weight: 350;
         padding: 0.2rem;
