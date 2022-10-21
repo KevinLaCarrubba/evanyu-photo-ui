@@ -1,4 +1,8 @@
 .pageContent {
     padding: 1rem 2rem;
     max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1rem;
+    justify-content: center;
 }
