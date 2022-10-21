@@ -1,8 +1,11 @@
 import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import { motion, Variants } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import styles from './PhotoGrid.module.scss'
+import Loader from '../../utilities/loader'
 const PhotoGrid = (urlArray: any) => {
+    const [showLoader, setShowLoader] = useState(true)
     const cardVariants: Variants = {
         offscreen: {
             filter: 'blur(2px)',
@@ -16,30 +19,39 @@ const PhotoGrid = (urlArray: any) => {
             }
         }
     }
+    useEffect(() => {
+        setTimeout(() => {
+            setShowLoader(false)
+        }, 4000)
+    }, [])
 
     return (
-        <div className={styles.pageContent}>
-            <ImageList variant="masonry" cols={3} gap={10}>
-                {urlArray?.urlArray.map((item: string, index: number) => (
-                    <motion.div
-                        key={index}
-                        className="card-container"
-                        initial="offscreen"
-                        whileInView="onscreen"
-                        viewport={{ once: true, amount: 0.8 }}>
-                        <motion.div className="box" variants={cardVariants}>
-                            <ImageListItem key={index}>
-                                <img
-                                    src={`${item}?w=161&fit=crop&auto=format`}
-                                    srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}
-                                    loading="lazy"
-                                />
-                            </ImageListItem>
+        <>
+            {showLoader && <Loader />}
+
+            <div className={styles.pageContent}>
+                <ImageList variant="masonry" cols={3} gap={10}>
+                    {urlArray?.urlArray.map((item: string, index: number) => (
+                        <motion.div
+                            key={index}
+                            className="card-container"
+                            initial="offscreen"
+                            whileInView="onscreen"
+                            viewport={{ once: true, amount: 0.8 }}>
+                            <motion.div className="box" variants={cardVariants}>
+                                <ImageListItem key={index}>
+                                    <img
+                                        src={`${item}?w=161&fit=crop&auto=format`}
+                                        srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                                        loading="lazy"
+                                    />
+                                </ImageListItem>
+                            </motion.div>
                         </motion.div>
-                    </motion.div>
-                ))}
-            </ImageList>
-        </div>
+                    ))}
+                </ImageList>
+            </div>
+        </>
     )
 }
 export default PhotoGrid

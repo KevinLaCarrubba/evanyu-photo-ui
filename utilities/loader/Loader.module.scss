@@ -1,0 +1,50 @@
+.content {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    .loader {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        span {
+            font-size: 5vw;
+            letter-spacing: 10px;
+            animation: flip 2.6s infinite linear;
+            transform-origin: 0 70%;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+        }
+        span:nth-child(even) {
+            color: red;
+        }
+        span:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        span:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        span:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+        span:nth-child(5) {
+            animation-delay: 1.2s;
+        }
+        span:nth-child(6) {
+            animation-delay: 1.5s;
+        }
+        span:nth-child(7) {
+            animation-delay: 1.8s;
+        }
+        @keyframes flip {
+            35% {
+                transform: rotateX(360deg);
+            }
+            100% {
+                transform: rotateX(360deg);
+            }
+        }
+    }
+}
