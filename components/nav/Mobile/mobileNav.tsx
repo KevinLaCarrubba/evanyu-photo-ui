@@ -59,7 +59,16 @@ const MobileNav = () => {
                         )
                     })}
                     <li className={styles.socialLinks}>
-                        <BsInstagram /> <BsLinkedin />{' '}
+                        <Link href="https://www.instagram.com/_evanyu/">
+                            <a>
+                                <BsInstagram className={styles.socialIcons} />
+                            </a>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/eyu914/">
+                            <a>
+                                <BsLinkedin className={styles.socialIcons} />
+                            </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

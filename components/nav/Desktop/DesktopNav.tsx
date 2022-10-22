@@ -34,14 +34,14 @@ const DesktopNav = () => {
                     )
                 })}
                 <li>
-                    <Link href="https://www.instagram.com">
+                    <Link href="https://www.instagram.com/_evanyu/">
                         <a>
                             <BsInstagram className={styles.socialIcons} />
                         </a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://www.linkedin.com">
+                    <Link href="https://www.linkedin.com/in/eyu914/">
                         <a>
                             <BsLinkedin className={styles.socialIcons} />
                         </a>
