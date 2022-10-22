@@ -1,0 +1,214 @@
+:root {
+  --nav-height: 5rem;
+  --footer-height: 4rem;
+  --Laptop: 1366px;
+  --Large-Table: 912px;
+  --Tablet: 768px;
+  --color-light: white;
+  --color-dark: #212121;
+  --color-signal: #fab700;
+  --color-background: var(--color-light);
+  --color-text: var(--color-dark);
+  --color-accent: var(--color-signal);
+  --size-bezel: 0.5rem;
+  --size-radius: 4px;
+  /* generic */
+  --gutterSm: 0.4rem;
+  --gutterMd: 0.8rem;
+  --gutterLg: 1.6rem;
+  --gutterXl: 2.4rem;
+  --gutterXx: 7.2rem;
+  --colorPrimary400: #7e57c2;
+  --colorPrimary600: #5e35b1;
+  --colorPrimary800: #4527a0;
+  --fontFamily: 'Dosis', sans-serif;
+  --fontSizeSm: 1.2rem;
+  --fontSizeMd: 1.6rem;
+  --fontSizeLg: 2.1rem;
+  --fontSizeXl: 2.8rem;
+  --fontSizeXx: 3.6rem;
+  --lineHeightSm: 1;
+  --lineHeightMd: 1.2;
+  --transitionDuration: 300ms;
+  --transitionTF: cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* floated labels */
+  --inputPaddingV: var(--gutterMd);
+  --inputPaddingH: var(--gutterLg);
+  --inputFontSize: var(--fontSizeLg);
+  --inputLineHeight: var(--lineHeightMd);
+  --labelScaleFactor: 0.8;
+  --labelDefaultPosY: 50%;
+  --labelTransformedPosY: calc(
+        (var(--labelDefaultPosY)) -
+            (var(--inputPaddingV) * var(--labelScaleFactor)) -
+            (var(--inputFontSize) * var(--inputLineHeight))
+    );
+  --inputTransitionDuration: var(--transitionDuration);
+  --inputTransitionTF: var(--transitionTF);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: var(--nav-height) 1fr;
+      grid-template-rows: var(--nav-height) 1fr;
+}
+
+span,
+p {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+/*# sourceMappingURL=globals.css.map */

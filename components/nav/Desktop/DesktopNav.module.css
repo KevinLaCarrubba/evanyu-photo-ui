@@ -1,0 +1,73 @@
+.navContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.navContents .linkGroups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.navContents .linkGroups a,
+.navContents .linkGroups a:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navContents .linkGroups li {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  margin-right: 10px;
+}
+
+.navContents .linkGroups li .socialIcons {
+  font-size: 1.3rem;
+}
+
+.navContents .linkGroups li .socialIcons:hover {
+  cursor: pointer;
+}
+
+.navContents .linkGroups li:last-child {
+  margin-right: 0;
+}
+
+.navContents .linkGroups li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.navContents .linkGroups li:hover:after {
+  width: 100%;
+  background: black;
+}
+
+.navContents .linkGroups .activeLink {
+  font-weight: 700;
+}
+/*# sourceMappingURL=DesktopNav.module.css.map */
